@@ -1,0 +1,40 @@
+﻿@model website_myteam.Models.EmployeeInfo
+@{
+    ViewData["Title"] = "Delete";
+}
+<h1>Delete</h1>
+<div>
+    <h4>User Information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Gender)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Company)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Company)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Department)
+        </dt>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index">Back to list</a>
+    </form>
+</div>
