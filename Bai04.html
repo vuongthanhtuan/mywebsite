@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <script src="C:\Users\PC\Desktop\Lab02-Web\jquery-1.11.3.js"></script>
+        <script src="C:\Users\PC\Desktop\Lab02-Web\jquery.validate.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#target').scroll(function(){
+                    $('#search').validate({
+                    rules:{
+                        tim:{
+                            minlength: 4
+                        }
+                    },
+                    messages:{
+                        tim:"Vui long nhap chính xác thong tin"
+                    },
+                });
+                });
+            });
+           
+           
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('#dropbtn').click(function(){
+                    $('#dropdown_content').slideDown("slow");
+                });
+            }); 
+        </script>
+      
+        <style>
+            div.target {
+                height: 1600px;
+                width: 1360px;
+            }
+            #label{
+                margin-left: 135px;
+                margin-top: -120px;
+            }
+            #inf1{
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                color: black;
+            }
+            #inf2{
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                margin-top: -10px;
+                color: black;
+            }
+            #information{
+                font-size: 26px;
+                font-family: sans-serif;
+                font-weight: bolder;
+                color:rgb(10, 137, 241);
+                margin-top: -10px;
+            }
+            nav {
+                margin-left:auto;
+                margin-top: 80px;
+                
+            }
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+           
+            nav a {
+                float: left;
+                width: 150px;
+                height: 40px;
+                background-color: rgb(4, 137, 245);
+                line-height: 40px;
+                text-align: center;
+                position: relative;
+                color:white;
+                font-family: inherit;
+                font-size: 18px;
+            }
+            #search{
+                width: 300px;
+                margin-top: -80px;
+                margin-left: 1050px;
+            }
+            #search label.error{
+                width: auto;
+                color:red;
+                display: table;
+            }
+            #tim{
+                margin-bottom: auto;
+            }
+            .dropdown_content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content1{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 150px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content1 a{
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown_content1 a:hover{
+                background-color:rgb(4, 137, 245);
+
+            }
+            .dropdown:hover  .dropdown_content {
+                display: block;
+            }  
+            .dropdown1:hover .dropdown_content1{
+                display: block;
+            }   
+            .dropdown_content2 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 280px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content2 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content2  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown2:hover  .dropdown_content2 {
+                display: block;
+            }
+            .dropdown_content3 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 430px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content3 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content3  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown3:hover  .dropdown_content3 {
+                display: block;
+            }  
+            .dropdown_content4 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 570px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content4 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content4  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown4:hover  .dropdown_content4 {
+                display: block;
+            }  
+            .dropdown_content5 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 750px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content5 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content5  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown5:hover  .dropdown_content5 {
+                display: block;
+            } 
+            .dropdown_content6 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 900px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content6 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content6  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown6:hover  .dropdown_content6 {
+                display: block;
+            }  
+            .dropdown_content7 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 1040px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content7 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content7  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown7:hover  .dropdown_content7 {
+                display: block;
+            }   
+            .dropdown_content8 {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                margin-top: 40px;
+                margin-left: 1169px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown_content8 a {
+                float: none;
+                color:white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown_content8  a:hover {
+                background-color:rgb(4, 137, 245);
+            }
+            .dropdown8:hover  .dropdown_content8 {
+                display: block;
+            }  
+        </style>
+    </head>
+    <body>
+        <div id="img">
+            <img src="1.png"> 
+            <img src="2.png">
+        </div>
+        <div class="target">
+            <img src="C:\Users\PC\Desktop\Lab02-Web\uit.png" height=100px weight=100px>
+        <div id="label">
+            <p id="inf1">ĐẠI HỌC QUỐC GIA TP.HỒ CHÍ MINH</p>
+            <p id="inf2">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</p>
+            <P id="information">UIT-HCM</P>
+        </div>
+        <nav>
+            <ul id="menu" class="main">
+                <div class="dropdown">
+                    <li>
+                        <div>
+                            <div class="dropbtn">
+                                <a>Trang chủ</a>
+                            </div>
+                                <div class="dropdown_content">
+                                    <a>Đăng Nhập</a>
+                                </div>
+                        <div>
+                    </li>
+                </div>
+                <div class="dropdown1">
+                    <li>
+                        <div>
+                            <div class="dropbtn1">
+                                <a>Tin tức</a>
+                            </div>
+                            <div class="dropdown_content1">
+                                <a>Thông báo chung</a>
+                                <a>Thông tin tuyển sinh</a>
+                                <a>Thông tin hoạt động</a>
+                                <a>Tin tức CNTT</a>
+                                <a>Tin tức giáo dục</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown2">
+                    <li>
+                        <div class="dropbtn2"> 
+                            <a>Giới thiệu</a>
+                        </div>
+                        <div class="dropdown_content2">
+                            <a>Tổng quan</a>
+                            <a>Tầm nhìn-Sứ mạng</a>
+                            <a>Nhận diện thương hiệu</a>
+                            <a>Cơ cấu tổ chức</a>
+                            <a>Chiến lược phát triển</a>
+                            <a>Đảm bảo chất lượng</a>
+                            <a>Nội quy cơ quan</a>
+                            <a>Hình ảnh</a>
+                            <a>Liên hệ</a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown3">
+                    <li>
+                        <div class="dropbtn3"> 
+                            <a>Tuyển sinh</a>
+                        </div>
+                        <div class="dropdown_content3">
+                            <a>Thông tin</a>
+                            <a>Đại học</a>
+                            <a>Sau đại học</a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown4">
+                    <li>
+                        <div class="dropbtn4"> 
+                            <a>Đào tạo</a>
+                        </div>
+                        <div class="dropdown_content4">
+                            <a>Đại học chính qui</a>
+                            <a>Đào tạo Quốc Tế</a>
+                            <a>Sau đại học</a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown5">
+                    <li>
+                        <div class="dropbtn5"> 
+                            <a>Nghiên cứu</a>
+                        </div>
+                        <div class="dropdown_content5">
+                            <a>Quy chế tạm thời về TSTT</a>
+                            <a>Kết quả công bố khoa học</a>
+                            <a>Hội nghị - Hội thảo</a>
+                            <a>Hợp tác quốc tế</a>
+                            <a>Khoa học công nghệ</a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown6">
+                    <li>
+                        <div class="dropbtn6"> 
+                            <a>Các đơn vị</a>
+                        </div>
+                        <div class="dropdown_content6">
+                            <a>Khoa - Bộ môn</a>
+                            <a>Phòng - Ban</a>
+                            <a>Trung tâm - PTN</a>
+                            <a>Doàn thể </a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown7">
+                    <li>
+                        <div class="dropbtn7"> 
+                            <a>Tra cứu</a>
+                        </div>
+                        <div class="dropdown_content7">
+                            <a>Đào tạo</a>
+                        </div>
+                    </li>
+                </div>  
+                <div class="dropdown8">
+                    <li>
+                        <div class="dropbtn8"> 
+                            <a>Liên kết</a>
+                        </div>
+                        <div class="dropdown_content8">
+                            <a>Sinh viên</a>
+                            <a>Nhân viên</a>
+                            <a>Khách</a>
+                        </div>
+                    </li>
+                </div>  
+            </ul>
+        </nav>
+        <form id="search" method="get">
+            <fieldset>
+                <div id="tim">
+                    <input id="tim" name="tim" type="text" placeholder="Tìm kiếm">
+                </div>  
+                <div id="btn">
+                    <button type="submit">Tìm</button>
+                </div>            
+            </fieldset>
+            
+        </form>
+        </div>
+    </body>
+</html>
